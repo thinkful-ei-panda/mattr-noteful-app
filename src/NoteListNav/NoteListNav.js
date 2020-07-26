@@ -5,6 +5,7 @@ import CircleButton from '../CircleButton/CircleButton'
 import ApiContext from '../ApiContext'
 import { countNotesForFolder } from '../notes-helpers'
 import './NoteListNav.css'
+import AddFolder from '../AddFolder'
 
 export default class NoteListNav extends React.Component {
   static contextType = ApiContext;
@@ -32,6 +33,7 @@ export default class NoteListNav extends React.Component {
           <CircleButton
             tag={Link}
             to='/add-folder'
+            Component={AddFolder}
             type='button'
             className='NoteListNav__add-folder-button'
           >

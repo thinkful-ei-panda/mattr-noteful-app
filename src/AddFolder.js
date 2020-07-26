@@ -39,7 +39,6 @@ export default class AddFolder extends Component {
                 <ErrorBoundary message={FolderNameError}/>
                 {this.state.folderName.touched && <ErrorBoundary message={this.validateFolderName} />}
                 </div>
-                {/* <input type='text' name='folder-name' onChange={e => this.updateFolderName(e.target.value)}} /> */}
                 </form>
             </div>
         )
